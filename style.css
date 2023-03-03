@@ -1,67 +1,66 @@
-body {
-        display: inline-grid;
-        place-items: center;
-        width: 100%;
-    }
-    
-    .simon {
-        position: relative;
-        margin-top: 50px;
-        padding: 10px;
-        border-radius: 5px;
-    }
-    
-    .buttonContainer {
-        display: inline-grid;
-        grid-gap: 10px;
-        grid-template-columns: auto auto;
-        transform: rotate(180deg);
-    }
-    
-    .square {
-        border-radius: 20px;
-        width: 200px;
-        height: 200px;
-        cursor: pointer;
-    }
-    .square:hover{
-        box-shadow: 0px 10px 100px black;
-    }
-    .square:active{
-        filter: brightness(150%);
-    }
-    
-    .red {
-        background-color: #EE6352;
-    }
-    
-    .blue {
-        background-color: #08B2E3;
-    }
-    
-    .green {
-        background-color: #57A773;
-    }
-    
-    .yellow {
-        background-color: #FFDF64;
-    }
+body{
+    display: inline-grid;
+    place-items: center;
+    width: 100%;
+}
+.simon {
+    position: relative;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 5px;
 
-    #startButton{
-        height: 100px;
-        width: 100px;
-        position: absolute;
-        right: 600px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        color: #fff;
-        background-color: #587792;
-        padding: 5px;
-        top: 100px;
 }
 
-#startButton:disabled{
-    background-color: #646060;
+.buttonContainer {
+    display: inline-grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto;
+    place-items: center;
+    /* transform: rotate(180deg); */
 }
 
+.cuadrado {
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.cuadrado:active,
+.active {
+    filter: brightness(200%);
+} 
+
+.cuadrado:hover{
+        box-shadow: 0px 10px 100px black; 
+} 
+
+.rojo{
+    background-color: rgba(238, 50, 50, 0.692);
+}
+
+.azul {
+    background-color: rgba(45, 45, 241, 0.616);
+}
+
+.verde {
+    background-color: rgba(33, 131, 33, 0.596);
+}
+
+.amarillo {
+    background-color: rgba(199, 199, 5, 0.521);
+}
+
+#startButton {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #fff;
+    background-color: rgb(70, 66, 66);
+    padding: 5px;
+}
+
+#startButton:disabled {
+    background-color: white;
+}
